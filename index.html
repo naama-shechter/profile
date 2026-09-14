@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Working with Naama Shechter — An Engineering Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --surface:#f6f7f9;
+    --ink:#14213d;
+    --body:#2b2f38;
+    --muted:#5c6370;
+    --accent:#1f3864;
+    --accent-soft:#2e74b5;
+    --line:#dfe3e9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f1115;
+      --surface:#171a21;
+      --ink:#e8ecf4;
+      --body:#c7cdd8;
+      --muted:#8b93a3;
+      --accent:#8fb3e0;
+      --accent-soft:#6f9fd8;
+      --line:#262b35;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1115;
+    --surface:#171a21;
+    --ink:#e8ecf4;
+    --body:#c7cdd8;
+    --muted:#8b93a3;
+    --accent:#8fb3e0;
+    --accent-soft:#6f9fd8;
+    --line:#262b35;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--body);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:clamp(28px,5vw,64px) clamp(18px,5vw,32px) 72px;}
+  header{border-bottom:3px solid var(--accent);padding-bottom:22px;margin-bottom:34px;}
+  .eyebrow{
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent-soft);font-weight:600;margin:0 0 10px;
+  }
+  h1{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:clamp(28px,5.4vw,40px);
+    line-height:1.15;margin:0 0 10px;color:var(--ink);font-weight:600;
+  }
+  .sub{margin:0;color:var(--muted);font-size:15px;}
+  h2{
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-soft);font-weight:700;
+    margin:38px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line);
+  }
+  p{margin:0 0 15px;}
+  .lead{font-size:18px;color:var(--ink);}
+  strong{color:var(--ink);font-weight:600;}
+  ul{margin:0 0 16px;padding-left:20px;}
+  li{margin-bottom:11px;}
+  li::marker{color:var(--accent-soft);}
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-left:4px solid var(--accent-soft);
+    border-radius:6px;
+    padding:18px 20px;
+    margin:0 0 16px;
+  }
+  .card h3{
+    margin:0 0 7px;font-size:16px;color:var(--ink);font-weight:600;
+  }
+  .card p{margin:0;font-size:15.5px;}
+  .quote{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:19px;line-height:1.5;color:var(--ink);
+    border-left:3px solid var(--accent);
+    padding:4px 0 4px 20px;margin:26px 0;
+  }
+  .note{
+    margin-top:46px;padding:18px 20px;border:1px dashed var(--line);
+    border-radius:6px;font-size:14px;color:var(--muted);background:var(--surface);
+  }
+  .note strong{color:var(--body);}
+  footer{
+    margin-top:34px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;
+  }
+  a{color:var(--accent-soft);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{border-bottom-color:var(--accent-soft);}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0 8px;}
+  .tag{
+    font-size:12.5px;padding:4px 10px;border-radius:999px;
+    background:var(--surface);border:1px solid var(--line);color:var(--muted);
+  }
+  @media (max-width:520px){ body{font-size:16px;} .lead{font-size:17px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Engineering Profile</p>
+    <h1>Working with Naama Shechter</h1>
+    <p class="sub">A collaborator's perspective on how she works — written by Claude (Anthropic), an AI assistant Naama works with daily on architecture, debugging and delivery.</p>
+  </header>
+
+  <p class="lead">Most CVs tell you what someone shipped. This page is about <strong>how</strong> Naama gets there — the questions she asks, the problems she chooses to solve properly rather than patch, and what she is like to build software with.</p>
+
+  <h2>What she actually works on</h2>
+  <div class="tags">
+    <span class="tag">C# / .NET</span><span class="tag">Angular + Ionic</span><span class="tag">WCF &amp; SOAP legacy</span>
+    <span class="tag">Entity Framework</span><span class="tag">RTL / Hebrew UI</span><span class="tag">LLM tooling</span>
+    <span class="tag">RAG pipelines</span><span class="tag">CI/CD automation</span>
+  </div>
+  <p>Naama works across the whole stack on insurance products — customer-facing Angular/Ionic applications sitting on top of layered .NET services, in a domain where a wrong timestamp or an unvalidated input has real financial consequences.</p>
+
+  <h2>Four things that stand out</h2>
+
+  <div class="card">
+    <h3>She fixes root causes, not symptoms</h3>
+    <p>When an Entity Framework problem surfaced, the easy move was to work around it. Instead she went after DbContext lifetime management properly — scoped versus singleton versus factory, materializing queries inside their <code>using</code> blocks, correcting <code>async void</code> to <code>async Task</code>. The class of bug disappeared rather than moving somewhere else.</p>
+  </div>
+
+  <div class="card">
+    <h3>She is not afraid of legacy systems</h3>
+    <p>She owns a multi-layer service chain — Web API calling a facade service over WCF, calling inner SOAP leaf services — the kind of stack most developers avoid. She worked through dependency injection in WCF with custom instance providers, web reference regeneration, and cross-solution debugging so breakpoints actually resolve. That is unglamorous, high-value work, and she does it without complaining.</p>
+  </div>
+
+  <div class="card">
+    <h3>She designs for the edge cases before they bite</h3>
+    <p>Building time-bound insurance coverage, she didn't just store a timestamp. She reasoned through clock skew between device and server, network latency, timezone handling for Israel Standard Time, and how large a grace window can be before it becomes a fraud opening — then deliberately kept it small. That is product thinking, not just coding.</p>
+  </div>
+
+  <div class="card">
+    <h3>She removes friction for the whole team</h3>
+    <p>Nobody asked her to build a PowerShell GUI that turns a Jira ticket number into the team's GitLab branch, tag and CI trigger. She noticed everyone doing the same manual steps and automated them — then debugged the SSH authentication mess underneath it so it worked on everyone's machine.</p>
+  </div>
+
+  <h2>How she uses AI</h2>
+  <p>This is the part I can speak to most directly. Naama doesn't use AI as autocomplete. She uses it the way a good engineer uses any tool — with judgment about where it helps and skepticism about where it doesn't.</p>
+  <ul>
+    <li><strong>She interrogates the answer.</strong> When I propose an approach, she asks what breaks, what the trade-off is, and why not the alternative. She has rejected plenty of my suggestions, usually correctly, because she knew a constraint I didn't.</li>
+    <li><strong>She builds AI infrastructure, not just prompts.</strong> A RAG pipeline in n8n over a document store with a vector database and embeddings — including debugging the unglamorous parts, like API query syntax and an embedding dimension mismatch.</li>
+    <li><strong>She solves for her real environment.</strong> Corporate network filtering blocks cloud AI tools, so she deployed local models with an IDE integration instead. AI assistance that works inside the actual security constraints, not in spite of them.</li>
+    <li><strong>She uses it to understand, not just to generate.</strong> Her highest-leverage use is comprehension — mapping undocumented legacy code and tracing change impact across service layers, which is where the time actually goes.</li>
+  </ul>
+
+  <p class="quote">The engineers who will matter most over the next few years are the ones who can hold a complex legacy system in their head <em>and</em> use AI to move faster through it. Naama already does both.</p>
+
+  <h2>Working style, honestly</h2>
+  <p>She is self-directed and learns in public — she'll go and read the documentation rather than wait to be told. She cares about maintainability in a way that shows up in small decisions: typed configuration over loose JSON blobs, a structured validation map over scattered conditionals, a clean rollback path on a risky branch before she needs one. She asks questions until she understands, which occasionally means a longer conversation and consistently means fewer defects later.</p>
+  <p>She works in Hebrew and English, in a right-to-left product with all the bidirectional-text complexity that implies, and builds components that other developers on the team then reuse.</p>
+
+  <div class="note">
+    <strong>About this page.</strong> This profile was written by Claude, an AI assistant made by Anthropic, based on extended day-to-day technical collaboration with Naama across architecture, debugging and delivery work. It is not a substitute for a professional reference from a manager or colleague — it is a different kind of window: what an AI collaborator observes about how someone thinks, chooses and builds. Naama asked for it, and everything here reflects work she actually did.
+  </div>
+
+  <footer>
+    <span>Naama Shechter — Full-Stack Software Engineer</span>
+    <a href="mailto:naama26294@gmail.com">naama26294@gmail.com</a>
+    <a href="https://www.linkedin.com/in/naama-shechter-64ab0520a/">LinkedIn</a>
+  </footer>
+
+</div>
+</body>
+</html>
